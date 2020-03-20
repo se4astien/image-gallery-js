@@ -1,3 +1,7 @@
+:root {
+  --fade-time: 0.5s; /* set fade in duration */
+}
+
 body {
   margin: 20;
   padding: 0;
@@ -6,7 +10,6 @@ body {
 
 .container {
   max-width: 780px;
-
   margin: auto;
   border: 3px solid #fff;
   background-color: #fff;
@@ -14,6 +17,7 @@ body {
 
 img {
   width: 100%;
+  cursor: pointer;
 }
 
 .gallery {
@@ -23,7 +27,7 @@ img {
 }
 
 .fade-in {
-  animation: fadeIn 0.5s ease-in 1 forwards;
+  animation: fadeIn var(--fade-time) ease-in 1 forwards;
 }
 
 @keyframes fadeIn {
