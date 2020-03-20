@@ -34,3 +34,9 @@ img {
     opacity: 1;
   }
 }
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
